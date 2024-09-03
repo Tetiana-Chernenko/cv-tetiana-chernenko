@@ -43,6 +43,7 @@ img {
   width: 370px;
   height: auto;
   margin-top: 40px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
 }
 
 .contacts-content {
