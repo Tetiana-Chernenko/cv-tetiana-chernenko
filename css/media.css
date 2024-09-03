@@ -1,0 +1,130 @@
+@media (max-width: 991px) {
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  .sidebar-section {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .contacts {
+    justify-content: center;
+  }
+
+  img {
+    width: 25%;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .skills-content {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 20px;
+  }
+
+  .portfolio-content {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-container {
+    margin: 10px auto;
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .contacts-content {
+    margin: 0 0 0 10px;
+    padding: 10px 10px 10px 20px;
+  }
+
+  .skills-content {
+    display: none;
+  }
+
+  .skills {
+    
+    margin: 0 0 0 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  .sidebar-title {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 12px;
+  }
+
+  .skills-item-text {
+    line-height: 12px;
+  }
+
+  .portfolio-content {
+    width: 220px;
+}
+
+  .main-content {
+    padding: 30px;
+  }
+
+  .about-me-name {
+    font-size: 30px;
+    line-height: 18px;
+    margin: 0 0 20px 0;
+  }
+
+  .about-me-descr {
+    width: 100%;
+    line-height: 22px;
+  }
+
+  .main-content-title {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .projects-item,
+  .projects-bracket {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .work-experience-period,
+  .education-experience-period {
+    line-height: 10px;
+    margin: 0px 0 5px 0;
+  }
+
+  .projects-text {
+    line-height: 14px;
+  }
+
+  .education-company {
+    line-height: 18px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  img {
+    width: 60%;
+  }
+  .contacts-content {
+    margin: 0;
+  }
+}
