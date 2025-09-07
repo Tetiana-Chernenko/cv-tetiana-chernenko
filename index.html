@@ -258,7 +258,7 @@
                     <div>
                         <span class="contacts-type">E :</span>
                         <a class="contacts-link" href="mailto:teti.cher@gmail.com" title="copy e-mail"
-                            onclick="copyEmail(event)">teti.cher@gmail.com</a>
+                            onclick="handleEmailClick(event)">teti.cher@gmail.com</a>
                     </div>
                     <div>
                         <span class="contacts-type">L :</span>
@@ -351,12 +351,19 @@
     </div>
 
     <script>
-        function copyEmail(event) {
-            event.preventDefault(); // отменяем стандартный переход по ссылке
+        function handleEmailClick(event) {
             const email = 'teti.cher@gmail.com';
-            navigator.clipboard.writeText(email)
-                .then(() => alert('Email copied!'))
-                .catch(err => console.error('Copying error: ', err));
+
+            // Попытка открыть mailto
+            const mailWindow = window.open(`mailto:${email}`, '_self');
+
+            // Если mailto не сработал (возврат null или ошибка), копируем email
+            if (!mailWindow) {
+                event.preventDefault(); // отменяем переход
+                navigator.clipboard.writeText(email)
+                    .then(() => alert('Email copied!'))
+                    .catch(err => console.error('Copying error: ', err));
+            }
         }
     </script>
     <script src="js/lang.js"></script>
