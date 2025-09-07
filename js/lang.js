@@ -53,7 +53,6 @@ const translations = {
     "work-experience-company-courses": "Courses / Trainings",
     "main-content-title-education": "Education",
     "education-experience-period-1": "September 2001 – June 2006",
-    "education-company-1": "Dniprovsk State Technical University",
     "education-experience-position-1":
       "Heat-and-Power Engineering. Engineer's degree",
     "sidebar-title-contacts": "Contacts",
@@ -114,7 +113,6 @@ const translations = {
     "work-experience-company-courses": "Kurse / Weiterbildungen",
     "main-content-title-education": "Ausbildung & Studium",
     "education-experience-period-1": "September 2001 – Juni 2006",
-    "education-company-1": "Dniprowskyj Staatliche Technische Universität",
     "education-experience-position-1":
       "Wärme- und Energietechnik. Ingenieurabschluss",
     "sidebar-title-contacts": "Kontakte",
